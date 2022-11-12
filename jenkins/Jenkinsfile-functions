@@ -11,7 +11,8 @@ pipeline {
                  sh """
                     ls -ltr
                     cd jenkins
-                    ls -ltr                    
+                    ls -ltr  
+                    chmod 755 functions.sh
                     """
             }
         }
