@@ -17,7 +17,6 @@ pipeline {
         stage('execute script') {
             steps {
                 sh """
-                    ls -ltr
                     cd jenkins
                     chmod 755 functions.sh
                     ls -ltr  
