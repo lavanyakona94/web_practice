@@ -17,7 +17,7 @@ pipeline {
         stage('execute script') {
             steps {
                 sh """
-                    bash functions.sh
+                    bash ./functions.sh
                     """
             }
         }
