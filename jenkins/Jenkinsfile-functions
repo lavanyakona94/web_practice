@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('checkout pipelines code') {
             steps {
-              git branch: 'jenkins', changelog: false, credentialsId: '33e611bc-7c2a-4fda-80ce-b4befa06f1af', poll: false, url: 'https://github.com/lavanyakona94/web_practice.git'
+              git branch: 'main', changelog: false, credentialsId: '33e611bc-7c2a-4fda-80ce-b4befa06f1af', poll: false, url: 'https://github.com/lavanyakona94/web_practice.git'
             }
         }
         stage('list of files') {
