@@ -17,7 +17,10 @@ pipeline {
         stage('execute script') {
             steps {
                 sh """
-                    bash functions.sh
+                    cd jenkins
+                    chmod 755 functions.sh
+                    ls -ltr  
+                    sh functions.sh $arg1 $arg2
                     """
             }
         }
